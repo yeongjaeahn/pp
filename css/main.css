@@ -853,6 +853,9 @@ footer .end p{padding: 5px 0;}
         justify-items: center;
         align-items: center;
     }
+    figure img:hover{
+        transform: scale(1,1);
+      }
     /* ----main-partical---
     /* footer */
     footer .box{
