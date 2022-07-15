@@ -1,0 +1,228 @@
+* { margin:0; padding:0; }
+li { list-style:none; }
+a { text-decoration:none; color:#222; display:block; }
+img { width:100%; }
+header, section, footer {
+    width:100%;
+    float:left;
+}
+header, section, footer, div {
+    box-sizing:border-box;
+}
+.wrap {
+    width:100%;
+}
+.box {
+    width:1140px;
+    margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+h1 { color:#fff; 
+    background-color:#464646;
+    padding:10px 40px;
+    text-align:center;
+    width:260px;
+    margin:100px auto 80px; 
+}
+header {
+    background-color:#ffc038;
+    height:100px;
+    padding-top:50px;
+}
+header .menu_btn {
+    display:none;
+}
+header nav {
+    width:700px;
+    margin-top:10px;
+}
+header nav ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+header nav ul li a:hover {
+    color:#fff;
+}
+.s1 {
+    background-color:#ffc038;
+}
+.s1 .box .s_left {
+    width:55%;
+    padding:100px 0;
+}
+.s1 .box .s_right {
+    width:45%;
+    padding:100px 0;
+}
+.s1 h1 {
+    width:100%;
+    background-color:transparent;
+    color:#fff;
+    text-align:left;
+    padding:0;
+    font-size:30px;
+    margin:0;
+}
+.s1 p {
+    color:#fff;
+    margin-top:20px;
+}
+.s1 a {
+    background-color:#464646;
+    color:#fff;
+    width:80px;
+    padding:10px 20px;
+    margin-top:30px;
+}
+.s2 .s_left {
+    width:45%;
+    padding:50px 0 100px;
+}
+.s2 .s_right {
+    width:55%;
+    padding:50px 0 0 100px;
+}
+.s2 .s_right p {
+    margin-top:50px;
+    /* 양쪽정렬 */
+    text-align:justify;
+}
+.s2 .s_right a {
+    color:#222;
+    background-color:#ffc038;
+    font-size:14px;
+    width:80px;
+    padding:10px 20px;
+    margin-top:40px;
+}
+.s3 {
+    background-color:#efefef;
+    text-align:center;
+    padding-bottom:100px;
+}
+.s3 img {
+    /* 가로길이 원래크기로 */
+    width:initial;
+}
+.s4 {
+    background-color:#ffc038;
+    padding-bottom: 100px;
+}
+.s4 .box ul {
+    width:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+.s4 p {
+    color:#fff;
+    font-size:16px;
+    text-align:center;
+    line-height:30px;
+}
+.s5 .content {
+    width:100%;
+    height:500px;
+    background-image:url('../img/hire-us.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    margin:130px 0;
+    position:relative;
+}
+.s5 .content .bg {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:rgba(255,192,56,0.4);
+}
+.s5 .content p {
+    width:100%;
+    background-color:#ffc038;
+    position:absolute;
+    bottom:0;
+    color:#fff;
+    padding:20px 50px;
+    box-sizing:border-box;
+    font-size:24px;
+}
+.s5 .content p a {
+    background-color:#fff;
+    color:#222;
+    width:60px;
+    float:right;
+    font-size:14px;
+    padding:10px 20px;
+    text-align:center;
+}
+footer {
+    background-color:#363636;
+    text-align:center;
+    padding:60px 0;
+}
+footer .sns {
+    width:180px;
+    margin:0 auto;
+}
+footer .sns ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+footer p {
+    color:#fff;
+    line-height:40px;
+}
+/* 미디어쿼리 */
+@media screen and (max-width:480px){
+    .box {
+        width:100%; padding:0 30px;
+    }
+    header .logo {
+        width:200px;
+    }
+    header .menu_btn {
+        display:block;
+        width:50px;
+    }
+    header nav {
+        display:none;
+    }
+    section .box {
+        width:100%;
+        flex-flow:column nowrap;
+    }
+    .s1 .box .s_left {
+        width:100%;
+        padding:100px 0 0;
+    }
+    .s1 .box .s_right {
+        width:100%;
+    }
+    .s2 .box .s_left {
+        width:100%;
+        padding:50px 0 0;
+    }
+    .s2 .box .s_right {
+        width:100%;
+        padding:50px 0 100px;
+    }
+    .s3 img {
+        width:100%;
+    }
+    .s4 .box ul {
+        flex-flow:column nowrap;
+    }
+    .s4 .box ul li {
+        width:40%;
+        margin:0 auto 50px;
+    }
+    .s5 .content p a {
+        display:none;
+    }
+}

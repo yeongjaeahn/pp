@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>아웃백 모바일</title>
+    <!-- --------------css-------------------- -->
+    <!-- 풀페이지 연결 -->
+    <link rel=" stylesheet" href="css/jquery.fullPage.css">
+    <!-- swiper css cdn 연결 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- 사용자 정의 css 연결 -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- --------------css 끝------------------- -->
+
+    <!-- --------------js-------------------- -->
+    <!-- 제이쿼리 라이브러리 연결 -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- 풀페이지.js 연결 -->
+    <script src="js/jquery.fullPage.js"></script>
+    <!-- swiper js cdn 연결] -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 사용자 정의.js 연결 -->
+    <script src="js/main.js"></script>
+    <!-- --------------js 끝-------------------- -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/header/h_logo.png" alt="로고">
+            </a>
+        </div>
+        <div class="menu">
+            <div class="ask"><a href="#">가맹문의</a></div>
+            <div class="menu_btn">
+                <a href="#">
+                    <div id="nav-icon4">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 네비게이션 (gnb - global navigation bar) -->
+        <div class="gnb">
+            <div class="top_menu">
+                <div class="search">
+                    <div class="search_input">
+                        <input type="text" placeholder="search" id="search">
+                    </div>
+                    <div class="search_btn">
+                        <a href="#">
+                            <img src="img/header/menu/search.png" alt="검색">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="lang">
+                    <a href="#">KO</a>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">BRAND</a>
+                        <ul class="sub">
+                            <li><a href="#">OUTBACK STORY</a></li>
+                            <li><a href="#">BEEF STORY</a></li>
+                            <li><a href="#">STEAK ACADEMY</a></li>
+                            <li><a href="#">OUTBACK CSR</a></li>
+                            <li><a href="#">PRESS CENTER</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU</a>
+                        <ul class="sub">
+                            <li><a href="#">TOMAHAWK STEAK</a></li>
+                            <li><a href="#">T-BONE STEAK</a></li>
+                            <li><a href="#">BLACK LABEL STEAKS</a></li>
+                            <li><a href="#">LUNCH SET</a></li>
+                            <li><a href="#">WINES</a></li>
+                            <li><a href="#">DELIVERY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MEMBERSFIP</a>
+                        <ul class="sub">
+                            <li><a href="#">MEMBERSFIP BENEFIT</a></li>
+                            <li><a href="#">BOOMERANG VIP</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">BENEFIT</a>
+                        <ul class="sub">
+                            <li><a href="#">CREDIT CARD</a></li>
+                            <li><a href="#">SKT % KT</a></li>
+                            <li><a href="#">POINT RAYMENT</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">STORE</a>
+
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <div id="fullpage">
+        <section class="section s1">
+            <!-- swiper slide -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide main1">
+                        <p>숙성이 잘된 고기는</p>
+                        <h1>맛이 다릅니다.</h1>
+                        <p>최고등급의 얼리지 않은 생고기를<br>  1주간 잘 숙성시켜 최고의 맛을 내는것<br>이것이 아웃백의 숙성기술입니다.</p>
+                  </div>
+                  <div class="swiper-slide main2">
+                        
+                        <p>아웃백만의 숙성기술로  </p>
+                        <h1>더욱 부드럽게.</h1>
+                        <p>자연스럽게 전해지는 소금의 성분들은<br> 단단히 결합되어있는 고기의 육질을 부드럽게 해주며,<br> 동시에 고기의 감칠맛을 극대화 시킵니다.</p>
+                    
+                  </div>
+                  <div class="swiper-slide main3">    
+
+                        <p >SINCE 122th  </p>
+                        <h1 >전통스테이크</h1>
+                        <p >122년의 전통을 가진 아웃백만의<br> 노하우로 고기본연의 맛을 살려<br> 입안 가득 스테이크의 향을 느껴보세요.</p>
+                
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div> 
+        </section>
+        <section class="section s2">
+            <button>SINCE 1900</button>
+            <h2>아웃백 스테이크의 <br>누적판매량</h2>
+            <!-- 숫자 올라가는 애니메이션 -->
+            <div class="addNumber">
+                <span></span>
+            </div>
+            <p>*그 외 음식제외한 순수 스테이크 판매량</p>
+        </section>
+        <section class="section s3">
+            <h2>아웃백에서 추천하는<br>추천 메뉴 10선 </h2>
+            <button>추천메뉴보기</button>
+            <p>*매장별로 판매 메뉴는 상이할수 있습니다.</p>
+            <div class="iconbg">
+                <div class="menuicon">
+                    <img src="img/section3/icon.png" alt="메뉴">
+                </div>
+                <div><h3>SINCE</h3></div>
+                <div><span>122th</span></div>
+            </div>
+        </section>
+        <section class="section s4">
+            <div class="logo"><img src="img/section4/logo.png" alt="로고"></div>
+            <h2>아웃백과 함께하는</h2>
+            <h1>행복한 순간</h1>
+            <div class="s4_box">
+                <div class="s4_left s4_img">
+                    <a href="#">
+                    <div class="s4_left_ani">
+                         <img src="img/section4/icon1.png" alt="매장식사"></div></a>
+                         <span><em>매장</em> 예약</span>
+                </div>
+                <div class="s4_right s4_img">
+                    <a href="#">
+                    <div class="s4_right_ani">
+                         <img src="img/section4/deli-icon.png" alt="딜리버리 서비스"></div></a>
+                    <span><em>딜리버리</em> 서비스</span>
+                </div>
+            </div>
+        </section>
+        <section class="section s5">
+           
+            <h2>NEW</h2>
+            <h1>OUTBACK<br>TOMAHAWK</h1>
+            <p>1% 황제 고기 블랙앵거스가 선사하는<br>부드러운 육질과 풍부한 육즙의 향연! 토마호크스테이크<br>즐거운 맛을 선사합니다</p>
+            
+        </section>
+        <section class="section s6">
+            <div class="logo">
+                <img src="img/section6/logo.png" alt="로고">
+            </div>
+            <h1>INSTARGRAM</h1>
+            <div class="s6_box">
+                <ul>
+                    <li class="sns sns1"><a href="#"></a></li>
+                    <li class="sns sns2"><a href="#"></a></li>
+                    <li class="sns sns3"><a href="#"></a></li>
+                    <li class="sns sns4"><a href="#"></a></li>
+                    <li class="sns sns5"><a href="#"></a></li>
+                    <li class="sns sns6"><a href="#"></a></li>
+                    <li class="sns sns7"><a href="#"></a></li>
+                    <li class="sns sns8"><a href="#"></a></li>
+                    <li class="sns sns9"><a href="#"></a></li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section class="section s7">
+                <div class="main1 main">
+                    <div class="con1 con">
+                        <button>NEWS</button>
+                        <h3>아웃백,에버랜드,가평휴게소 직영점<BR>오픈<h3>
+                        <p>2022.05.24</p>
+                    </div>
+                </div>
+                <div class="main2 main">
+                    <div class="con2 con">
+                        <button>MEMBER</button>
+                        <h3>부메랑 멤버쉽 혜택<br>아웃백 멤버쉽 리워드<h3>
+                        <div>
+                            <a href="#"><img src="img/section7/buttorn.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main3 main">
+                    <div class="con3 con">
+                        <button>FRANCHISE</button>
+                        <h3>아웃백 가맹점문의<br>바로가기<h3>
+                        <div>
+                            <a href="#"><img src="img/section7/buttorn.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer class="section fp-auto-height">
+            <div class="info">
+                <ul>
+                    <li><a href="#">고객의 소리</a></li>
+                    <li><a href="#">마일리지 조회</a></li>
+                    <li><a href="#">상품권 구매</a></li>
+                    <li><a href="#">인트라넷</a></li>  
+                </ul>
+            </div>
+            <address>
+                
+                가맹문의 대표번호:1899-2422(연결 1번)
+                <br>직통번호:031-780-1555 | 이메일: abcd@naver.com
+            </address>
+            <p>COPYRIGHT YJSTUDIO.ALL RIGHT RESURVED.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
