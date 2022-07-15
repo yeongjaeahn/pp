@@ -207,11 +207,7 @@ header .centerbox-another .headerbox{
     height: 100vh;
     
 }
-.main-visual .title div{
-    width: 100vw;
-    left: 0;
-    font-size: 50px;
-}
+
 .main-visual .title span{
     position: absolute;
     font-size: 50px;
@@ -705,7 +701,11 @@ footer .end p{padding: 5px 0;}
     }
    /* -------------heeader 끝---- */
    /* ----------main-visual 시작---- */
-   
+   .main-visual .title div{
+    width: 100vw;
+    left: 0;
+    font-size: 50px;
+}
    .main-visual .title span{
     width: 100%;
     top: 15%;
