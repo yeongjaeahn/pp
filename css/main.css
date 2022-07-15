@@ -1,0 +1,891 @@
+*{margin: 0; padding: 0;}
+
+
+em{
+    font-size: 18px;
+    font-style: normal;
+}
+li { list-style:none; }
+a { text-decoration:none; color:#222; display:block; }
+img { width:100%; }
+header, section, footer {
+    width:100%;
+    
+    float:left;
+}
+header, section, footer, div {
+    box-sizing:border-box;
+}
+.wrap {
+    width:100%;
+    /* min-width: 320px;
+    max-width: 850px; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+.centerbox {
+    width:1350px;
+    margin:0 auto;
+    
+    padding: 80px 0;
+    position: relative;
+}
+h3{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+    color:black;
+}
+.main{
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+/* ---------------------header------------------ */
+.mobile-menu{
+    display: none;
+}
+.centerbox-another {
+    width:1350px;
+    
+    margin:0 auto;
+    
+    
+}
+.m-btn{
+    display: none;
+}
+.headerbox{
+    padding: 35px 0;
+    position: relative;
+}
+header{
+    padding: none;
+    background: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.5));
+    position: fixed;
+    z-index: 100; 
+    -webkit-transition-duration:1.3s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:1.3s;
+    transition-timing-function:ease;
+    
+}
+
+
+.down {
+    opacity: 0.3;
+    -webkit-transition-duration:1.3s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:1s;
+    transition-timing-function:ease;
+    
+    
+  }
+  
+header a{
+    color: #050505;
+    font-weight: bold;
+    
+    
+}
+header .menu nav ul{
+    display: flex;
+    justify-content: space-around;     
+    
+}
+header .menu nav ul li{
+    margin-left: 40px;
+    
+}
+header .menu nav ul li a{
+    
+    font-size: 18px;
+    
+}
+
+header .centerbox-another .logo{
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+}
+header .centerbox-another .logo i{
+    font-weight: bold;
+    font-style: normal;
+}
+
+header .centerbox-another .logo::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background: red;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+header .centerbox-another .headerbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerbox .menu ul li a::after{
+    content: "";
+    border-bottom: 2px solid red;
+    transition: all 0.5s;
+    transform: scaleX(0);
+    display: block;
+    
+    
+    
+}
+.headerbox .menu ul li a:hover::after{
+    transform: scaleX(1);
+}
+/* -------------------main-visual------ */
+
+  .main-visual {
+    width: 100vw;
+    height: 100vh;
+    
+    font-size: 5vw;
+  }
+  
+  .bottom-container,
+  .top-container {
+    width: 40vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 35vh;
+    left: 30vw;
+    padding: 1vw;
+  }
+  
+  .bottom-container {
+    color: #232323;
+  }
+  
+  .top-container {
+    background-color: red;
+    color: white;
+    clip-path: circle(13% at 85% 50%);
+    animation: circleMove 10s ease-in-out infinite;
+  }
+  
+  @keyframes circleMove {
+    0%, 100% {
+      clip-path: circle(13% at 85% 50%);
+    }
+    50% {
+      clip-path: circle(13% at 15% 50%);
+    }
+  }
+.main-visual{
+    
+    width: 100%;
+    background-image: url();
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height : 100vh;
+   
+    
+}
+
+.main-visual .title{
+    height: 100vh;
+    
+}
+.main-visual .title span{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #f5f5f5;
+    top: 40%;
+    right: 0;
+    cursor: default;
+}
+/* -------------------main-visual 끝-------- */
+
+/* -------------------main-intro 시작-------- */
+.main-intro{
+    
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.main-intro .centerbox{
+    padding: 100px 0;
+}
+.main-intro .container{
+    
+    margin-top: 50px;
+}
+.main-intro .container > div > div{
+    padding-bottom: 10px;
+}
+.main-intro .container > div > div::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background: red;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.container .about_box{
+    padding-bottom: 40px;
+    
+}
+.main-intro .text-box div >div{
+    
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    color: black;
+    padding-bottom: 30px;
+}
+.main-intro .text-box div >div:nth-child(2){
+    padding-top: 100px;
+}
+.main-intro p{
+    font-size: 22px;
+    line-height: 1.6em;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.main-intro .profile img{
+    border-radius: 100%;
+    width: 300px;
+    
+    
+    
+}
+.main-intro .text-box{
+    display: flex;
+    
+    flex-flow: row;
+    align-items: flex-start;
+    
+    
+}
+.edu_box .description{
+    line-height: 2em;
+}
+
+.first_box .title{
+    font-size: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 10px;
+}
+.first_box .title i{
+    font-size: 60px;
+    color: rgb(187, 36, 36);
+    font-style: normal;
+}
+.first_box  p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+/* -------------------main-intro 끝-------- */
+/* -------------------main-skils 시작-------- */
+
+.iconbox .icon{
+    width: 100px;
+    
+}
+.iconbox .icon em{
+    margin-top: 10px;
+    display: inline-block;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-style: normal;
+}
+
+
+
+.main-skils ul{
+    
+    display: flex;
+    justify-content:space-around;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;  
+}
+.main-skils .centerbox .iconbox{
+    width: 100%;
+}
+
+.main-skils ul li div{
+    padding-bottom: 20px;
+}
+/* -------------------main-skils 끝-------- */
+/* -------------------main-web 시작-------- */
+.wrapper{
+    text-align: center;
+  }
+  
+  .wrapper .laptop{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    
+  }
+  
+  .wrapper .laptop .laptop-inner{
+    display: inline-block;
+    height: 59%;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 37%;
+    -web-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 86%;
+    
+  }
+  .phone{
+    
+    display: inline-block;
+    
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    
+    -web-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    height: 81%;
+    top: 49%;
+    width: 32%;
+    border-radius: 5%;
+  }
+  .wrapper .laptop .laptop-inner img{
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: 5s ease-in-out;
+    -o-transition: 5s ease-in-out;
+    transition: 3s ease-in-out;
+    width: 100%
+  }
+  .wrapper .laptop .phone img{
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    -webkit-transition: 5s ease-in-out;
+    -o-transition: 5s ease-in-out;
+    transition: 10s ease-in-out;
+    width: 100%
+  }
+ 
+  
+/* ------- */
+.main-web{
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-web .main-webcontant .contantbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.main-web .main-webcontant .image{
+    width: 100%;
+    margin-left: 4%;
+}
+
+.main-webmenu{
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 8px 12px;  
+}
+.main-webcontant em{
+    font-weight: bold;
+    color: black;
+}
+.main-webmenu li{
+    width: 150px;
+    margin-left:30px ;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.main-webmenu li a{
+    font-weight: bold;
+}
+.main-web .tab li.active a { 
+    color: #ffffff; 
+    padding: 10px;
+    background-color: rgb(255, 53, 53);
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.main-webmenu li:first-child{
+    margin-left: 0;
+}
+
+.main-webcontant > img{
+    display: block;
+    
+    width: 100px;
+    text-align: center;
+}
+
+.main-webcontant .contantbox .text-grup > div{
+    margin-bottom: 15px;
+}
+.main-webcontant .contantbox .text-grup{
+    width: 60%;
+    
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+.main-webcontant .contantbox div em{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: block;
+    font-style: normal;
+}
+.main-webcontant .contantbox .text-grup .description{
+    font-size: 15px;
+}
+
+.main-web .tabbox{
+    display: none;
+}
+.main-web .tabbox.active{
+    display: block;
+}
+
+
+.go-button a{
+    float: left;
+}
+.go-button  a:hover{
+    background-color: #f4f4f4;
+    color:#333;
+    border: 1px solid #333;
+}
+.go-button a{
+    font-size: 16px;
+    padding: 10px 12px;
+    background-color:  rgb(255, 53, 53);
+    margin-right: 30px;
+    color: #f4f4f4;
+    border: 1px solid  rgb(255, 53, 53);
+    border-radius: 5px;
+   font-style: normal;
+
+}
+
+/* ---------------main-web 끝---------------- */
+
+/* ------------- main-practical 시작 --------*/
+:root {
+    --shadow-color: 0deg 0% 60%;
+    --shadow-elevation-low:
+      0.3px 0.3px 0.5px hsl(var(--shadow-color) / 0.34),
+      0.5px 0.6px 0.9px -1.2px hsl(var(--shadow-color) / 0.34),
+      1.1px 1.3px 1.9px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium:
+      0.3px 0.3px 0.5px hsl(var(--shadow-color) / 0.36),
+      0.9px 1.1px 1.6px -0.8px hsl(var(--shadow-color) / 0.36),
+      2.3px 2.8px 4.1px -1.7px hsl(var(--shadow-color) / 0.36),
+      5.7px 6.7px 9.9px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high:
+      0.3px 0.3px 0.5px hsl(var(--shadow-color) / 0.34),
+      1.7px 2px 3px -0.4px hsl(var(--shadow-color) / 0.34),
+      3.1px 3.7px 5.4px -0.7px hsl(var(--shadow-color) / 0.34),
+      5.1px 6px 8.9px -1.1px hsl(var(--shadow-color) / 0.34),
+      8.1px 9.6px 14.1px -1.4px hsl(var(--shadow-color) / 0.34),
+      12.6px 15.1px 22.1px -1.8px hsl(var(--shadow-color) / 0.34),
+      19.2px 22.9px 33.6px -2.1px hsl(var(--shadow-color) / 0.34),
+      28.3px 33.7px 49.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  }
+
+  .gallery {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  figure img {
+    width: 270px;
+    height: 370px;
+    border-radius: 8px;
+    box-shadow: var(--shadow-elevation-high);
+    cursor: pointer;
+    transform:scale(1,1);
+    transition: all 1s;
+  }
+
+  figure img:hover{
+    transform: scale(1.1,1.1);
+  }
+ 
+/* ------ */
+    .main-practical .container {
+    display:flex;
+    gap: 12px;
+  
+    
+    height: 50vmin;
+}
+    .main-practical img {
+      flex: 1;
+  
+      height: 100%;
+  
+      object-fit: cover;
+  
+      overflow: hidden;
+  
+    }
+      
+/*
+/* ----------main-practical 끝--------- */
+
+/* -----------footer 시작 ---------*/
+footer .centerbox {
+   margin: 0 auto;
+}
+footer{
+    
+    background-color:white;
+}
+footer .box{
+    width: 760px;
+    
+    margin: 0 auto;
+    
+    
+}
+footer .box_wrap{
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+footer .text_box p{
+    padding: 10px 0;
+}
+footer .title,.name{
+    font-size: 36px;
+    font-weight:bold;
+}
+footer .adress{
+    font-size: 28px;
+    font-weight: bold;
+}
+footer .des2{
+    font-size: 24px;
+    font-weight: 700;
+}
+footer .end{
+    padding-top: 20px;
+    text-align: center;
+}
+footer .end p{padding: 5px 0;}
+/* ------------------모바일 웹------------- */
+@media screen and (max-width:1023px){
+    .swiper{
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    section:not(.main-visual) .centerbox{
+        padding: 50px 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    h3{
+        margin-bottom: 30px;
+        font-size: 30px;
+    
+    }
+    /* -----heder---- */
+    .headerbox{
+        padding: 20px 0;
+    }
+    header .logo{
+        width: 300px;
+    }
+    header .centerbox-another .headerbox {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        
+    }
+    header .centerbox-another{
+        width: 100%;
+    }
+    header .centerbox-another .menu{
+        width: 100%;
+    }
+    .headerbox .menu nav ul{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+    
+    .headerbox .menu nav ul li{
+        margin-left: 0;
+        text-align: center;
+    }
+    .m-btn{
+        width: 100%;
+        display: block;
+        width: 25px;
+        position: absolute;
+        right: 0;
+        padding: 20px 0;
+        top: 0;
+        
+        
+    }
+    header .menu nav ul{
+        flex-direction: column;
+    }
+    .pc-menu ul li{
+        padding: 20px 12px;
+       
+        
+    }
+   /* -------------heeader 끝---- */
+   /* ----------main-visual 시작---- */
+   
+   .main-visual .title span{
+    width: 100%;
+    top: 15%;
+    font-size: 30px;
+    text-align: center;}
+
+   
+   
+/* --------main-visual 끝 */
+/* ------main-intro 시작--- */
+.main-intro .title{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.main-intro .text-box p{
+    margin-bottom: 15px;
+}
+    /* ------main-intro 끝--- */
+/* --------main skils 시작 */
+.main-skils ul {
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+}
+   
+    
+   
+    .centerbox-another{
+        padding: 0 30px;
+    }
+    /* ---------main-web 시작 */
+    .main-web .main-webcontant > img{
+        display: none;
+
+    }
+    .main-web .main-webcontant .image{
+        margin: 15px 0;
+        
+    }
+   
+   
+    .main-web .main-webcontant .contantbox{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: column wrap;
+        flex-direction:column-reverse;    
+    }
+    .main-web .main-webcontant .contantbox .text-grup{
+        order: 1;
+    }
+    .main-webcontant .contantbox .text-grup{
+        width: 100%;
+    }
+    .main-webmenu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .main-webmenu li{
+        margin: 0;
+        /* align-items: center; */
+    }
+
+
+    .centerbox-anothe,.centerbox{
+        width: 100%;
+        
+    }
+    
+    .main-intro .intro-box{
+        display: flex;
+        flex-flow:column nowrap;
+        justify-content: space-between;
+    }
+    
+    .main-web .main-webcontant .contantbox{
+        display: flex;
+        flex-flow:column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .main-web .main-webcontant .contantbox .table-con{
+        display: table-row;
+    }
+    .main-web .main-webcontant .contantbox .table-con .cell{
+        display: table-cell;
+    }
+    
+    .main-web .main-webcontant .contantbox .table-con .cell:last-child{
+        padding-left: 15px;
+        font-size: 13px;
+    }
+    .go-button{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        
+    }
+    .go-button a{
+        margin-right: 0;
+    }
+    .go-button .mobile{
+        margin-left: 15px;
+    }
+    .go-button .mobile{
+        margin-right: 0;
+    }
+    .main-practical .tab2{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }   
+    .main-practical .centerbox .tab-contantbox ul{
+        margin: 0;
+        
+    }
+    .main-webcontant .contantbox .text-grup > div:nth-child(5){
+        margin-bottom: 40px;
+    }
+     /*  */
+    
+   
+    .main-practical .centerbox .tab-contantbox{
+        display: flex;
+        justify-content: space-around;
+        flex-flow:column nowrap;
+        align-items: center;
+    }
+    .main-webmenu{
+        font-size: 15px;
+    }
+    .go-button .mobile a{
+        margin-right: 0;
+    }
+    /* ----main-partical--- */
+    .gallery{
+        display: grid;
+        grid-gap: 20px;
+        /* grid-template-columns: repeat(auto-fit, minmax(350px, 3fr)); */
+        grid-template-columns: none;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+    }
+    /* ----main-partical---
+    /* footer */
+    footer .box{
+        width: 100%;
+    }
+    footer .box_wrap{
+        padding: 0;
+        width: 100%;
+    }
+    footer .text_box{
+        width: 100%;
+    }
+
+    .swiper-slide{
+        width: 320px;
+        height: 180px;
+    }
+    
+footer .box_wrap{
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+footer .text_box p{
+    padding: 10px 0;
+}
+footer .title,.name{
+    font-size: 20px;
+    font-weight:bold;
+}
+footer .adress{
+    font-size: 18px;
+    font-weight: bold;
+}
+footer .des2{
+    font-size: 18px;
+    font-weight: 700;
+}
+footer .end{
+    padding-top: 20px;
+    text-align: center;
+}
+footer .end p{padding: 5px 0;}
+}
